@@ -1,0 +1,84 @@
+* {
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    45deg,
+    rgba(117, 84, 160, 1),
+    rgba(106, 95, 168, 1),
+    rgba(90, 148, 207, 1),
+    rgba(70, 135, 198, 1)
+    rgba(44, 148, 207, 1)
+  );
+  background-size: 200% 200%;
+  animation: flowBackground 5s ease-in-out infinite;
+}
+
+@keyframes flowBackground {
+  0% {
+    background-position: bottom left;
+  }
+  50% {
+    background-position: top right;
+  }
+  100% {
+    background-position: bottom left;
+  }
+}
+
+
+.card {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0.75rem;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
